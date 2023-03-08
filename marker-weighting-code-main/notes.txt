@@ -1,0 +1,48 @@
+1. sex, race, education, insurance, age, income
+
+     F-Norm : 53.008
+      Model : [[0,4], [1,2], [3,5]]
+              [[sex, age], [race, education], [insurance, income]]
+
+2. sex, race, insurance, education, age, income
+
+     F-Norm : 47.247
+      Model : [[0, 4], [1, 2], [3, 5]]
+              [[sex, age], [race, insurance], [education, income]]
+
+3. age, race, insurance, education, income, sex
+
+     F-Norm : 43.285
+      Model : [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]
+
+     second in the list is the result from no. 2 above
+
+
+
+
+ 5 : num_sources: 2018, num_targets: 12215
+Age: 
+	Source : [0, 1, 2, 3, 4, 5, 6, 7, 8]
+	Target : [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Education: 
+	Source : [   2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,     19, 20, 21, 22, 23, 24, 25]
+	Target : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+Income: 
+	Source : [      4, 5, 6, 7, 8]
+	Target : [1, 2, 4, 5, 6, 7, 8]
+Insurance: 
+	Source : [0, 1]
+	Target : [0, 1]
+RaceEth: 
+	Source : [0, 1,       4, 5,    7, 8, 9]
+	Target : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Sex: 
+	Source : [0, 1]
+	Target : [0, 1]
+
+
+
+Remove target categories with zero data. No need to code those at all.
+Merge categories to remove all source categorical values with no data.
+Use the category comparator to check.
+
